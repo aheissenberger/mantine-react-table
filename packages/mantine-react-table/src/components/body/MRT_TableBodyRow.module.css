@@ -98,11 +98,8 @@
     }
   }
   /* end column pinning styles */
-/* TODO: fix for select */
-  /* TODO: check for grid layout and virtualization */
   /* row pinning styles */
   &[data-row-pinned] {
-    display: table-row;
     background-color: var(--mantine-color-body);
     bottom: calc(var(--mrt-pinned-row-bottom) * 1px);
     opacity: 0.97;
@@ -144,7 +141,7 @@
 
   /* selection styles */
   &[data-selected] {
-    background-color: var(--mrt-selected-row-background-color);
+    background-color: var(--mantine-color-body);
 
     td {
       &[data-column-pinned] {
